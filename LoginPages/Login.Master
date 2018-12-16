@@ -1,0 +1,181 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Login.Master.cs" Inherits="WebProje.Site2" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>YetenekSensin</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="../Content/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        .bg{
+            background-color:#333;
+        }
+        .row {
+            margin-left: 0;
+            margin-right: 0;
+        }
+        .bg-imageF {
+            background-image: url(Content/images/backgroundFootball.jpg);
+            background-size:auto;
+            background-repeat:no-repeat;
+            
+        }
+        .bg-imageB {
+            background-image: url(Content/images/backgroundBasket.jpg);
+            background-size:auto;
+            background-repeat:no-repeat;
+            
+        }
+        .bg-imageV {
+            background-image: url(Content/images/backgroundVolley.jpg);
+            background-size:auto;
+            background-position:center;
+            background-repeat: no-repeat;
+        }
+       
+        .fa {
+            padding: 20px;
+            font-size: 30px;
+            width: 50px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+        }
+
+        .fa:hover {
+            opacity: 0.7;
+        }
+
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
+
+        .fa-twitter {
+            background: #55ACEE;
+            color: white;
+        }
+
+
+        .fa-linkedin {
+            background: #007bb5;
+            color: white;
+        }
+
+        .fa-instagram {
+            background: #125688;
+            color: white;
+        }
+
+        dl, ol, ul {
+            margin-bottom: 0;
+        }
+
+        .text-box {
+            border-radius: 20px;
+            border-width: 2px;
+            border-color: #333;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <script src="../Content/js/jquery-3.3.1.min.js"></script>
+    <script src="../Content/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <a class="navbar-brand mx-auto" href="SignUp.aspx">
+                <h2>Yeteneksenin.com</h2>
+            </a>
+        </nav>
+    </header>
+    <div class="row" style="background-color: #007bff; height: 5px; margin: 0;"></div>
+    <div class="bg">
+
+        <br />
+        <br />
+
+        <div class="container-fluid">
+
+            <div class="col-12 text-center text-light">
+                <h3>Register.</h3>
+            </div>
+            <br />
+            <br />
+            <div class="col-12 text-center text-success">
+                <h3>Login.</h3>
+            </div>
+            <br />
+            <br />
+            <div class="col-12 text-center text-warning">
+                <h3>Upload your video.</h3>
+            </div>
+            <br />
+            <br />
+            <div class="col-12 text-center text-info">
+                <h3>Be star.</h3>
+            </div>
+            <br />
+            <br />
+            <div class="col-12 text-center text-danger">
+                <h1>Your talent</h1>
+            </div>
+
+        </div>
+        <br />
+        <br />
+
+        <div class="row" style="background-color: #007bff; height: 5px; margin: 0;"></div>
+    </div>
+    <form id="form1" runat="server">
+        <div>
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+        </div>
+    </form>
+    <footer class="bg-dark" style="color: white;">
+
+        <br />
+        <div class="container-fluid">
+
+
+            <h1 class="display-4 text-center col-12">Bize Ulaşın</h1>
+            <br />
+            <br />
+            <div class="row justify-content-center">
+                <p class="lead text-center col-12 col-md-8">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum congue consequat eleifend. Cras malesuada id lectus vitae mollis. Vestibulum ligula turpis, commodo et condimentum mattis, 
+                    fringilla sed magna. Nunc vehicula, dolor ut dignissim dictum, ex odio dictum turpis, ac lacinia tellus dui vehicula felis. Fusce purus felis, venenatis eu eleifend eget, elementum venenatis est. 
+                    Morbi elementum tellus sit amet molestie tincidunt. Aliquam suscipit tellus id eros scelerisque, ut ultrices orci placerat. Proin aliquet cursus justo quis scelerisque.
+                </p>
+            </div>
+            <br />
+            <br />
+            
+
+
+            <div class="row justify-content-center">
+
+                    
+                        <a href="#" class="fa fa-instagram col-2 col-md-1"></a>
+                   
+                  
+                        <a href="#" class="fa fa-twitter col-2 col-md-1"></a>
+                   
+                        <a href="#" class="fa fa-facebook col-2 col-md-1"></a>
+                                     
+                        <a href="#" class="fa fa-linkedin col-2 col-md-1"></a>
+                 
+             
+            </div>
+        </div>
+
+    </footer>
+</body>
+</html>
