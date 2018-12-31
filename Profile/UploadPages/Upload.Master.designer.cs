@@ -7,10 +7,10 @@
 // </otomatik üretildi>
 //------------------------------------------------------------------------------
 
-namespace WebProje {
+namespace WebProje.UploadPages {
     
     
-    public partial class Site1 {
+    public partial class Upload {
         
         /// <summary>
         /// head denetimi.
@@ -29,15 +29,6 @@ namespace WebProje {
         /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-        
-        /// <summary>
-        /// UserNametxt denetimi.
-        /// </summary>
-        /// <remarks>
-        /// Otomatik üretilmiş alan.
-        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label UserNametxt;
         
         /// <summary>
         /// ContentPlaceHolder1 denetimi.

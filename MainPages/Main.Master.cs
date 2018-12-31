@@ -11,7 +11,18 @@ namespace WebProje
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["SessID"] != null)
+            {
+
+                UserNametxt.Text = Session["SessionUserName"].ToString();
+            }
+            else
+            {
+                Response.Redirect("../LoginPages/Login.aspx");
+            }
 
         }
+
+       
     }
 }

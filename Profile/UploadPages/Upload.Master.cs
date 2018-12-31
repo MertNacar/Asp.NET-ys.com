@@ -5,19 +5,19 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace WebProje
+namespace WebProje.UploadPages
 {
-    public partial class Categories : System.Web.UI.MasterPage
+    public partial class Upload : System.Web.UI.MasterPage
     {
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Session["SessID"] != null)
             {
-
+          
             }
             else
             {
-                Response.Redirect("../LoginPages/Login.aspx");
+                Response.Redirect("../../LoginPages/Login.aspx");
             }
         }
     }

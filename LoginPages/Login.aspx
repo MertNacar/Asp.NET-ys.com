@@ -8,23 +8,36 @@
     <div class="bg-imageV">
         <br />
         <br />
+
+         <div class="row justify-content-center text-danger">
+            <asp:Label ID="ErrorMessage" runat="server" Text="Label" Visible="false">
+
+            </asp:Label>
+        </div>
+        <br />
         <div class="row justify-content-center">
-            <input class="col-12 col-md-3 text-box" id="username" placeholder="Username" type="text" />
+                        
+            <asp:TextBox ID="Usernametxt" runat="server" CssClass="col-12 col-md-3 text-box"  placeholder="Username" required="required" ></asp:TextBox>
+                  
+        </div>
+        <div class="row justify-content-center">
+             <asp:RegularExpressionValidator ID="RegexUsername" CssClass="col-12 col-md-3 text-danger" runat="server" ErrorMessage="* Geçerli bir kullanıcı adı giriniz." ControlToValidate="Usernametxt" ValidationExpression="[a-zA-Z0-9]*$"></asp:RegularExpressionValidator>
+        </div>
+
+        <br />
+        <br />
+        <div class="row justify-content-center">
+             <asp:TextBox ID="Passwordtxt" runat="server" CssClass="col-12 col-md-3 text-box"  placeholder="Password"  TextMode="Password" required="required" ></asp:TextBox>           
         </div>
         <br />
         <br />
         <div class="row justify-content-center">
-            <input class="col-12 col-md-3 text-box" id="password" placeholder="Password" type="password" />
-        </div>
-        <br />
-        <br />
-        <div class="row justify-content-center">
-            <asp:Button CssClass="col-12 col-md-2 btn btn-primary" ID="buttonLogin" runat="server" Text="Login" />
+            <asp:Button CssClass="col-12 col-md-2 btn btn-primary" ID="buttonLogin" runat="server" Text="Login" OnClick="buttonLogin_Click" />
         </div>
        <br />
         <br />
         <div class="row justify-content-center">
-            <a href="ForgetPassword.aspx">
+            <a style="text-decoration:none" href="ForgetPassword.aspx">
                 <p class="lead text-light">
                     Şifrenizi mi unuttunuz ?
                 </p>
@@ -34,7 +47,7 @@
         </div>
        
         <div class="row justify-content-center">
-            <a href="SignUp.aspx">
+            <a style="text-decoration:none" href="SignUp.aspx">
                 <p class="lead text-light">
                     Hala kayıt olmadınız mı ?
                 </p>

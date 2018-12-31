@@ -5,9 +5,9 @@
 <html>
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>YetenekSensin</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link href="../Content/css/bootstrap.min.css" rel="stylesheet" />
     <style>
         .bg{
@@ -18,19 +18,19 @@
             margin-right: 0;
         }
         .bg-imageF {
-            background-image: url(Content/images/backgroundFootball.jpg);
+            background-image: url(../Content/images/backgroundFootball.jpg);
             background-size:auto;
             background-repeat:no-repeat;
             
         }
         .bg-imageB {
-            background-image: url(Content/images/backgroundBasket.jpg);
+            background-image: url(../Content/images/backgroundBasket.jpg);
             background-size:auto;
             background-repeat:no-repeat;
             
         }
         .bg-imageV {
-            background-image: url(Content/images/backgroundVolley.jpg);
+            background-image: url(../Content/images/backgroundVolley.jpg);
             background-size:auto;
             background-position:center;
             background-repeat: no-repeat;
@@ -94,11 +94,13 @@
         </nav>
     </header>
     <div class="row" style="background-color: #007bff; height: 5px; margin: 0;"></div>
+    <form id="form1" runat="server">
     <div class="bg">
 
         <br />
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:YetenekSeninConnectionString %>"></asp:SqlDataSource>
         <br />
-
+         
         <div class="container-fluid">
 
             <div class="col-12 text-center text-light">
@@ -131,7 +133,6 @@
 
         <div class="row" style="background-color: #007bff; height: 5px; margin: 0;"></div>
     </div>
-    <form id="form1" runat="server">
         <div>
 
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
